@@ -41,3 +41,6 @@ def create_app(test_config=None):
     app.add_url_rule('/', endpoint='index')
 
     return app
+
+# Define the app instance for deployment
+app = create_app()
